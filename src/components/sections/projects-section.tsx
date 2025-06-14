@@ -9,7 +9,7 @@ const projects = [
     title: "AVASARA",
     description: "Awarded 3rd place in a web design competition. Designed and implemented a responsive UI using HTML, CSS, and JavaScript within a time-limited challenge with strong emphasis on design clarity and user experience.",
     tags: ["Next.js", "Tailwind CSS", "Figma", , "GitHub"],
-    image: "/images/avasara.png",
+    image: "/images/Avasara.png",
     link: "https://github.com/Szwagery-ar/Avasara",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     title: "REUSEMART",
     description: "Capstone project built in a 3-person team to create a secondhand goods marketplace. I led the database design in MySQL and developed the web app using Next.js, also contributing to its React Native mobile version.",
     tags: ["Next.js", "React Native", "MySQL", "Tailwind CSS", "GitHub"],
-    image: "/images/reusemart.png",
+    image: "/images/Reusemart.png",
     link: "https://github.com/Szwagery-ar/reusemart",
   },
 ]
