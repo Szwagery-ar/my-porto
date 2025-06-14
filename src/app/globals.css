@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0B0C10;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.checkered-bg {
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, #1F2833 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, #1F2833 40px);
+  background-size: 40px 40px;
+}
