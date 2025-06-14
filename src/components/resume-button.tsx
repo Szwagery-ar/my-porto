@@ -13,7 +13,7 @@ export function ResumeButton({ filePath, className = "" }: ResumeButtonProps) {
 
   return (
     <a
-      href={filePath}
+      href="/files/szwagery-resume.pdf"
       download
       className={`inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 font-mono text-sm hover:bg-primary/90 transition-colors border-2 border-primary relative overflow-hidden ${className}`}
       onMouseEnter={() => setIsHovered(true)}

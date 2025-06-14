@@ -57,7 +57,7 @@ export default function AboutSection() {
               {/* Add the resume download button here */}
               <div className="pt-6">
                 <a
-                  href="/resume.pdf"
+                  href="/files/szwagery-resume.pdf"
                   download
                   className="inline-flex items-center gap-2 bg-[#00DBD8] text-[#0B0C10] px-4 py-2 font-mono text-sm hover:bg-primary/90 transition-colors border-2 border-[#00DBD8] relative group overflow-hidden"
                 >

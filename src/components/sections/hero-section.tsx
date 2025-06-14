@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 relative">
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-10 relative">
       {/* Brutalist grid overlay */}
       <div className="absolute inset-0 grid-lines pointer-events-none"></div>
 

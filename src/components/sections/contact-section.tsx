@@ -76,9 +76,8 @@ export default function ContactSection() {
           </div>
         )
       }
-      {/* Red diagonal line */}
-      <div className="absolute bottom-0 right-0 w-full h-8 bg-[#00DBD8]"></div>
-      <div className="absolute bottom-8 left-0 w-8 h-[30vh] bg-[#00DBD8]"></div>
+      <div className="absolute bottom-0 right-0 w-full h-8 bg-[#00DBD8] hidden sm:block"></div>
+      <div className="absolute bottom-8 left-0 w-8 h-[30vh] bg-[#00DBD8] hidden sm:block"></div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <AnimatedSection>
