@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { GlitchText } from "@/components/glitch-text"
 import { AnimatedSection } from "@/components/animated-section"
+import Image from "next/image"
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false)
@@ -65,7 +66,12 @@ export default function HeroSection() {
           <AnimatedSection direction="left" delay={600} className="hidden lg:block">
             <div className="aspect-square bg-background border-2 border-[#00DBD8] relative overflow-hidden border-brutalist">
               <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-mono">
-                <img src="/images/Me.webp" alt="Profile Image" className="hover:grayscale-0 transition duration-300" />
+                <Image
+                  src="/images/Me.webp"
+                  alt="Profile Image"
+                  fill
+                  className="hover:grayscale-0 transition duration-300"
+                />
               </div>
               <div className="absolute bottom-0 left-0 right-0 bg-[#00DBD8] p-4 font-mono text-sm text-primary-foreground">
                 <div className="flex justify-between">

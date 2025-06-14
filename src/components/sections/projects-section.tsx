@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
+import Image from "next/image";
 
 const projects = [
   {
@@ -52,7 +53,7 @@ export default function ProjectsSection() {
             <p className="text-muted-foreground max-w-md mt-10">
               Selected works showcasing my skills and experience in development and design.
             </p>
-          </div>  
+          </div>
           {/* <div className="mt-6 md:mt-0">
             <Button variant="outline" className="font-mono border-[#00DBD8] rounded-none text-primary hover:bg-[#00DBD8]/20">
               VIEW ALL WORK
@@ -72,10 +73,11 @@ export default function ProjectsSection() {
                 <div className="relative group">
                   <div className="aspect-[4/3] bg-[background] border-2 border-[#00DBD8] overflow-hidden flex items-center justify-center relative group">
                     {/* Gambar di tengah */}
-                    <img
+                    <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
-                      className="object-contain max-w-full max-h-full transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-105"
                     />
 
                     {/* Hover Overlay */}
