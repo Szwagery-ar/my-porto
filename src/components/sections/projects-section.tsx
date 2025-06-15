@@ -10,7 +10,8 @@ const projects = [
     description: "Awarded 3rd place in a web design competition. Designed and implemented a responsive UI using HTML, CSS, and JavaScript within a time-limited challenge with strong emphasis on design clarity and user experience.",
     tags: ["Next.js", "Tailwind CSS", "Figma", , "GitHub"],
     image: "/images/Avasara.png",
-    link: "https://github.com/Szwagery-ar/Avasara",
+    site: "https://avasara.netlify.app/",
+    github: "https://github.com/Szwagery-ar/Avasara",
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const projects = [
     description: "Capstone project built in a 3-person team to create a secondhand goods marketplace. I led the database design in MySQL and developed the web app using Next.js, also contributing to its React Native mobile version.",
     tags: ["Next.js", "React Native", "MySQL", "Tailwind CSS", "GitHub"],
     image: "/images/Reusemart.png",
-    link: "https://github.com/Szwagery-ar/reusemart",
+    site: "",
+    github: "https://github.com/Szwagery-ar/reusemart",
   },
 ]
 
@@ -108,7 +110,7 @@ export default function ProjectsSection() {
                       asChild
                       className="bg-[#00DBD8] text-[#1F2833] hover:bg-[#00DBD8]/90 rounded-none"
                     >
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.site} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4" />
                         <span className="sr-only">Visit project</span>
                       </a>
@@ -143,7 +145,7 @@ export default function ProjectsSection() {
                       className="font-mono group relative overflow-hidden bg-[#00DBD8] hover:bg-[#00DBD8]/90 rounded-none"
                     >
                       <a
-                        href={project.link}
+                        href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="relative z-10 text-[#1F2833]"

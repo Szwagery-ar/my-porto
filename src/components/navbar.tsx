@@ -93,7 +93,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/resume.pdf"
+              href="/files/szwagery-resume.pdf"
               download
               className="font-mono text-sm tracking-widest py-2 hover:text-primary transition-colors inline-flex items-center gap-2"
             >
