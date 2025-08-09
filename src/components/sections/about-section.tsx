@@ -2,7 +2,7 @@ import { AnimatedSection } from "@/components/animated-section"
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 md:py-32 relative">
+    <section id="about" className="py-20 md:py-32 relative overflow-x-clip">
       {/* Diagonal lines background */}
       <div className="absolute inset-0 diagonal-lines pointer-events-none"></div>
 

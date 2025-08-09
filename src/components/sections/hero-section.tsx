@@ -14,17 +14,43 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-10 relative">
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-10 relative overflow-x-clip">
       {/* Brutalist grid overlay */}
       <div className="absolute inset-0 grid-lines pointer-events-none"></div>
 
-      {/* Red diagonal line */}
+      {/* diagonal line */}
       <div className="absolute top-0 left-0 w-full h-8 bg-[#00DBD8]"></div>
       <div className="absolute top-8 right-0 w-8 h-[30vh] bg-[#00DBD8]"></div>
 
-      <div className={`transition-all duration-1000 ${loaded ? "opacity-100" : "opacity-0 translate-y-10"}`}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
+      <div className={`transition-all duration-100 ${loaded ? "opacity-100" : "opacity-0 translate-y-10"}`}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-6">
+
+          <AnimatedSection direction="left" delay={600} className="order-1 lg:order-2">
+            <div className="aspect-square bg-background border-2 border-[#00DBD8] relative overflow-hidden border-brutalist">
+              <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-mono">
+                <Image
+                  src="/images/Me.webp"
+                  alt="Profile Image"
+                  fill
+                  className="hover:grayscale-0 transition duration-300"
+                />
+              </div>
+              <div className="absolute bottom-0 left-0 right-0 bg-[#00DBD8] p-4 font-mono text-sm text-primary-foreground">
+                <div className="flex justify-between">
+                  <span className="animate-pulse text-[#0B0C10]">DEVELOPER</span>
+                  <span className="text-[#0B0C10]">DESIGNER</span>
+                  <span className="text-[#0B0C10]">CREATOR</span>
+                </div>
+              </div>
+
+              {/* Brutalist decorative elements */}
+              <div className="absolute top-0 right-0 w-16 h-16 bg-[#00DBD8]"></div>
+              <div className="absolute bottom-32 left-0 w-8 h-8 bg-[#00DBD8]"></div>
+            </div>
+          </AnimatedSection>
+
+          <div className="space-y-6 order-2 lg:order-1">
+
             <AnimatedSection delay={200}>
               <div className="inline-block border-2 border-[#00DBD8] px-4 py-1 font-mono text-sm relative overflow-hidden">
                 <span className="relative z-10">PORTFOLIO / {currentYear}</span>
@@ -62,30 +88,6 @@ export default function HeroSection() {
               </div>
             </AnimatedSection>
           </div>
-
-          <AnimatedSection direction="left" delay={600} className="hidden lg:block">
-            <div className="aspect-square bg-background border-2 border-[#00DBD8] relative overflow-hidden border-brutalist">
-              <div className="absolute inset-0 flex items-center justify-center text-muted-foreground font-mono">
-                <Image
-                  src="/images/Me.webp"
-                  alt="Profile Image"
-                  fill
-                  className="hover:grayscale-0 transition duration-300"
-                />
-              </div>
-              <div className="absolute bottom-0 left-0 right-0 bg-[#00DBD8] p-4 font-mono text-sm text-primary-foreground">
-                <div className="flex justify-between">
-                  <span className="animate-pulse text-[#0B0C10]">DEVELOPER</span>
-                  <span className="text-[#0B0C10]">DESIGNER</span>
-                  <span className="text-[#0B0C10]">CREATOR</span>
-                </div>
-              </div>
-
-              {/* Brutalist decorative elements */}
-              <div className="absolute top-0 right-0 w-16 h-16 bg-[#00DBD8]"></div>
-              <div className="absolute bottom-32 left-0 w-8 h-8 bg-[#00DBD8]"></div>
-            </div>
-          </AnimatedSection>
         </div>
       </div>
     </section>

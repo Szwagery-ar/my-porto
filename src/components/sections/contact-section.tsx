@@ -61,7 +61,7 @@ export default function ContactSection() {
 
 
   return (
-    <section id="contact" className="py-20 md:pt-32 md:pb-60 relative">
+    <section id="contact" className="py-20 md:pt-32 md:pb-60 relative overflow-x-clip">
       {
         toast.show && (
           <div
@@ -138,7 +138,7 @@ export default function ContactSection() {
         </AnimatedSection>
 
         <AnimatedSection direction="left" delay={300}>
-          <div className="border-2 border-[#00DBD8] p-6 md:p-8 hover:bg-[#00DBD8]/5 transition-colors duration-500 relative">
+          <div className="border-2 border-[#00DBD8] p-6 md:p-8 hover:bg-[#00DBD8]/5 transition-colors duration-500 relative overflow-hidden">
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-[#00DBD8]"></div>
             <div className="absolute -bottom-4 -left-4 w-8 h-8 bg-[#00DBD8]"></div>
 
